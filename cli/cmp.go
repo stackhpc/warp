@@ -27,7 +27,7 @@ import (
 	"github.com/minio/cli"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var cmpFlags = []cli.Flag{}
@@ -43,7 +43,7 @@ var cmpCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS] before-benchmark-data-file after-benchmark-data-file
-  -> see https://github.com/minio/warp#comparing-benchmarks
+  -> see https://github.com/stackhpc/warp#comparing-benchmarks
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

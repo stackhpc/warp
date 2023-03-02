@@ -23,7 +23,7 @@ import (
 
 	"github.com/minio/cli"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var zipFlags = []cli.Flag{
@@ -56,7 +56,7 @@ var zipCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS]
-  -> see https://github.com/minio/warp#zip
+  -> see https://github.com/stackhpc/warp#zip
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

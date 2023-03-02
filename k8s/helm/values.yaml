@@ -28,7 +28,7 @@ warpConfiguration:
   operationToBenchmark: get
 
 warpJobArgs: {}
-  # Full args can be found: https://github.com/minio/warp#usage
+  # Full args can be found: https://github.com/stackhpc/warp#usage
   #
   # Number of objects to be used
   # objects: 1000

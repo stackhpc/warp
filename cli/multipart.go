@@ -23,7 +23,7 @@ import (
 	"github.com/minio/cli"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var multipartFlags = []cli.Flag{
@@ -68,7 +68,7 @@ var multipartCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS]
-  -> see https://github.com/minio/warp#put
+  -> see https://github.com/stackhpc/warp#put
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

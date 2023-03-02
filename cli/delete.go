@@ -20,7 +20,7 @@ package cli
 import (
 	"github.com/minio/cli"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var deleteFlags = []cli.Flag{
@@ -53,7 +53,7 @@ var deleteCmd = cli.Command{
   The benchmark will end when either all objects have been deleted or the durations specified with -duration has been reached. 
 USAGE:
   {{.HelpName}} [FLAGS]
-  -> see https://github.com/minio/warp#delete
+  -> see https://github.com/stackhpc/warp#delete
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

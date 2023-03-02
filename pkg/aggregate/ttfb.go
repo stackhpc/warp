@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 // TTFB contains times to first byte if applicable.

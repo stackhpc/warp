@@ -34,8 +34,8 @@ import (
 	"github.com/minio/pkg/console"
 	"github.com/minio/pkg/trie"
 	"github.com/minio/pkg/words"
-	"github.com/minio/warp/pkg"
 	completeinstall "github.com/posener/complete/cmd/install"
+	"github.com/stackhpc/warp/pkg"
 )
 
 var (
@@ -208,7 +208,7 @@ func registerApp(name string, appCmds []cli.Command) *cli.App {
 	}
 
 	app.HideHelpCommand = true
-	app.Usage = "Benchmark tool for S3 compatible object storage systems.\n\tFor usage details see https://github.com/minio/warp"
+	app.Usage = "Benchmark tool for S3 compatible object storage systems.\n\tFor usage details see https://github.com/stackhpc/warp"
 	app.Commands = commands
 	app.Author = "MinIO, Inc."
 	app.Version = pkg.Version + " - " + pkg.ShortCommitID

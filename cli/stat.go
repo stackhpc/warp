@@ -21,7 +21,7 @@ import (
 	"github.com/minio/cli"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var statFlags = []cli.Flag{
@@ -53,7 +53,7 @@ var statCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS]
-  -> see https://github.com/minio/warp#stat
+  -> see https://github.com/stackhpc/warp#stat
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

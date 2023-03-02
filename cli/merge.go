@@ -27,7 +27,7 @@ import (
 	"github.com/minio/cli"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var mergeFlags = []cli.Flag{
@@ -49,7 +49,7 @@ var mergeCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS] benchmark-data-file1 benchmark-data-file2 ... 
-  -> see https://github.com/minio/warp#merging-benchmarks
+  -> see https://github.com/stackhpc/warp#merging-benchmarks
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

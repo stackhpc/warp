@@ -28,8 +28,8 @@ import (
 
 	"github.com/klauspost/compress/zstd"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/aggregate"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/aggregate"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 // BenchmarkStatus contains information when a benchmark is running.

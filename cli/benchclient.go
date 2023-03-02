@@ -28,8 +28,8 @@ import (
 
 	"github.com/minio/cli"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
 	"github.com/minio/websocket"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 // clientReplyType indicates the client reply type.

@@ -21,7 +21,7 @@ import (
 	"github.com/minio/cli"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var getFlags = []cli.Flag{
@@ -57,7 +57,7 @@ var getCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS]
-  -> see https://github.com/minio/warp#get
+  -> see https://github.com/stackhpc/warp#get
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

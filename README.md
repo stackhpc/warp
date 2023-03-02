@@ -4,7 +4,7 @@ S3 benchmarking tool.
 
 # Download
 
-[Download Binary Releases](https://github.com/minio/warp/releases) for various platforms.
+[Download Binary Releases](https://github.com/stackhpc/warp/releases) for various platforms.
 
 # Configuration
 
@@ -77,7 +77,7 @@ For reliable benchmarks, clients should have synchronized clocks.
 Warp checks whether clocks are within one second of the server,
 but ideally, clocks should be synchronized with [NTP](http://www.ntp.org/) or a similar service.
 
-To use Kubernetes see [Running warp on kubernetes](https://github.com/minio/warp/blob/master/k8s/README.md).
+To use Kubernetes see [Running warp on kubernetes](https://github.com/stackhpc/warp/blob/master/k8s/README.md).
 
 ## Client Setup
 
@@ -137,7 +137,7 @@ their start time using the `--syncstart` parameter.
 The time format is 'hh:mm' where hours are specified in 24h format, 
 and parsed as local computer time. 
 
-Using this will make it more reliable to [merge benchmarks](https://github.com/minio/warp#merging-benchmarks)
+Using this will make it more reliable to [merge benchmarks](https://github.com/stackhpc/warp#merging-benchmarks)
 from the clients for total result.
 This will combine the data as if it was run on the same client. 
 Only the time segments that was actually overlapping will be considered. 

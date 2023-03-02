@@ -32,9 +32,9 @@ import (
 	"github.com/minio/cli"
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/api"
-	"github.com/minio/warp/pkg/aggregate"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/api"
+	"github.com/stackhpc/warp/pkg/aggregate"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var analyzeFlags = []cli.Flag{
@@ -97,7 +97,7 @@ var analyzeCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS] benchmark-data-file
-  -> see https://github.com/minio/warp#analysis
+  -> see https://github.com/stackhpc/warp#analysis
 
 Use - as input to read from stdin.
 

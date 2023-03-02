@@ -24,7 +24,7 @@ import (
 	"github.com/minio/mc/pkg/probe"
 	"github.com/minio/minio-go/v7"
 	"github.com/minio/pkg/console"
-	"github.com/minio/warp/pkg/bench"
+	"github.com/stackhpc/warp/pkg/bench"
 )
 
 var mixedFlags = []cli.Flag{
@@ -71,7 +71,7 @@ var mixedCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS]
-  -> see https://github.com/minio/warp#mixed
+  -> see https://github.com/stackhpc/warp#mixed
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}

@@ -41,7 +41,7 @@ var clientCmd = cli.Command{
 
 USAGE:
   {{.HelpName}} [FLAGS] [listen address]
-  -> see https://github.com/minio/warp#multiple-hosts
+  -> see https://github.com/stackhpc/warp#multiple-hosts
 
 FLAGS:
   {{range .VisibleFlags}}{{.}}
