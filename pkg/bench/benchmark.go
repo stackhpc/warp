@@ -204,7 +204,7 @@ func (c *Common) deleteAllInBucket(ctx context.Context, prefixes ...string) {
 		}
 	}()
 
-	errCh := cl.RemoveObjects(ctx, c.Bucket, objectsCh, minio.RemoveObjectsOptions{GovernanceBypass: true})
+	errCh := cl.RemoveObjects(ctx, c.Bucket, objectsCh, minio.RemoveObjectsOptions{GovernanceBypass: false})
 	for err := range errCh {
 		if err.Err != nil {
 			c.Error(err.Err)
